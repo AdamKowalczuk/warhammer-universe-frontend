@@ -24,13 +24,12 @@ export default class addPost extends Component {
       .then((response) => {
         if (response.data.length > 0) {
           this.setState({
-            posts: response.data.map(
-              (post) => (post.title, post.description, post.author)
-            ),
-
-            title: response.data[0].title,
-            description: response.data[1].description,
-            author: response.data[2].author,
+            // posts: response.data.map(
+            //   (post) => (post.title, post.description, post.author)
+            // ),
+            // title: response.data[0].title,
+            // description: response.data[1].description,
+            // author: response.data[2].author,
           });
         }
       })
