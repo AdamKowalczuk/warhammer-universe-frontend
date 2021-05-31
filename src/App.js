@@ -15,8 +15,8 @@ function App() {
       <Nav />
       <Route path="/" exact component={ExercisesList} />
       <Route path="/posty/:id" component={Details} />
-      <Route path="/historia" component={History} />
-      <Route path="/frakcje" component={Fractions} />
+      <Route path="/historia" exact component={History} />
+      <Route path="/frakcje" exact component={Fractions} />
       <Route path="/dodaj-post" component={AddPost} />
       <footer>
         <h2>Copyright &copy; Warhammer Universe 2021</h2>

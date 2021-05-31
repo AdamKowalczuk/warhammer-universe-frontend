@@ -3,8 +3,6 @@ import "../App.css";
 import warhammer1 from "../images/warhammer1.jpg";
 import warhammer2 from "../images/warhammer2.jpg";
 import dwarf from "../images/dwarf.jpg";
-// import { Translation } from "react-i18next";
-// i18n.changeLanguage("pl-en");
 export default class history extends Component {
   render() {
     return (
@@ -13,15 +11,6 @@ export default class history extends Component {
           <div className="context-box">
             <h2>Historia</h2>
             <img src={warhammer1} alt="warhammer" className="img-right" />
-            {/* <Translation>
-              {(t, { i18n }) => (
-                <p>
-                  {t(
-                    "Według wczesnej mitologii Krasnoludów , Elfów i Jaszczuroludzi -miliony lat temu na ziemię przybyła rasa istot, znanych teraz jako Pradawni (Prastarzy). Były to dziwne stworzenia o niemal boskich mocach. Ukształtowały one klimat i teren tego świata. Uważano, że nie pochodzą z tego świata, lecz byli także jego twórcami. Nowo odkryty świat wydał im się dobry. Wiedzieli, że odegra główną rolę w historii wszechświata, postanowili więc pokierować jego drogą. Ogrzali go w promieniach słońca i wykuli kontynenty zgodnie z wzorami starożytnego proroctwa. Aby ułatwić sobie prace, stworzyli Portale Biegunowe na północnej i południowej granicy świata. Pozwoliły one na błyskawiczne podróżowanie przez rozległe przestrzenie dzielące ich skolonizowane światy."
-                  )}
-                </p>
-              )}
-            </Translation> */}
             <p>
               Według wczesnej mitologii Krasnoludów , Elfów i Jaszczuroludzi -
               miliony lat temu na ziemię przybyła rasa istot, znanych teraz jako
