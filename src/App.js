@@ -1,9 +1,7 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import Posts from "./views/posts";
 import History from "./views/history";
 import Fractions from "./views/fractions";
 import AddPost from "./views/addPost";

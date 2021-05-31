@@ -3,7 +3,7 @@ import "../App.css";
 import warhammer1 from "../images/warhammer1.jpg";
 import warhammer2 from "../images/warhammer2.jpg";
 import dwarf from "../images/dwarf.jpg";
-import { Translation } from "react-i18next";
+// import { Translation } from "react-i18next";
 // i18n.changeLanguage("pl-en");
 export default class history extends Component {
   render() {
