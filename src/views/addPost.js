@@ -20,7 +20,7 @@ export default class addPost extends Component {
 
   componentDidMount() {
     axios
-      .get("https://warhammer-universe-server.herokuapp.com/posts/dodaj-post")
+      .get("https://warhammer-universe-server.herokuapp.com/posts/")
       .then((response) => {
         if (response.data.length > 0) {
           this.setState({

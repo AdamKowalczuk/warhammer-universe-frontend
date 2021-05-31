@@ -16,7 +16,7 @@ export default class Details extends Component {
   componentDidMount() {
     axios
       .get(
-        "https://warhammer-universe-server.herokuapp.com/posts" +
+        "https://warhammer-universe-server.herokuapp.com/posts/" +
           this.props.match.params.id
       )
       .then((response) => {
