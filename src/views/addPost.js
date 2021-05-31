@@ -18,25 +18,25 @@ export default class addPost extends Component {
     };
   }
 
-  // componentDidMount() {
-  //   axios
-  //     .get("https://warhammer-universe-server.herokuapp.com/posts/")
-  //     .then((response) => {
-  //       if (response.data.length > 0) {
-  //         this.setState({
-  //           // posts: response.data.map(
-  //           //   (post) => (post.title, post.description, post.author)
-  //           // ),
-  //           // title: response.data[0].title,
-  //           // description: response.data[1].description,
-  //           // author: response.data[2].author,
-  //         });
-  //       }
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-  // }
+  componentDidMount() {
+    axios
+      .get("https://warhammer-universe-server.herokuapp.com/posts/")
+      .then((response) => {
+        if (response.data.length > 0) {
+          this.setState({
+            // posts: response.data.map(
+            //   (post) => (post.title, post.description, post.author)
+            // ),
+            // title: response.data[0].title,
+            // description: response.data[1].description,
+            // author: response.data[2].author,
+          });
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
 
   onChangeTitle(e) {
     this.setState({
@@ -64,7 +64,10 @@ export default class addPost extends Component {
     };
 
     axios
-      .post("http://localhost:3001/posts/dodaj-post", post)
+      .post(
+        "https://warhammer-universe-server.herokuapp.com/posts/dodaj-post",
+        post
+      )
       .then((res) => console.log(res.data));
 
     window.location = "/";
