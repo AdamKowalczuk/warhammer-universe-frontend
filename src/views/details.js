@@ -19,6 +19,7 @@ export default class Details extends Component {
         "https://warhammer-universe-server.herokuapp.com/posts/" +
           this.props.match.params.id
       )
+
       .then((response) => {
         this.setState({
           title: response.data.title,
