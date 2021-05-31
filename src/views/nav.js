@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../App.css";
+import { Link } from "react-router-dom";
 export default class nav extends Component {
   render() {
     return (
@@ -7,24 +8,23 @@ export default class nav extends Component {
         <nav>
           <div className="header">
             <div className="site-title">
-              <a href="/">
+              <Link to="/historia">
                 <h1>Warhammer Universe</h1>
-              </a>
+              </Link>
             </div>
             <div className="header-right">
-              <a href="/historia">
-                {" "}
-                <h3>Historia</h3>{" "}
-              </a>
-              <a href="/frakcje">
+              <Link to="/historia">
+                <h3>Historia</h3>
+              </Link>
+              <Link to="/frakcje">
                 <h3>Frakcje</h3>
-              </a>
-              <a href="/">
+              </Link>
+              <Link to="/">
                 <h3>Posty</h3>
-              </a>
-              <a href="/dodaj-post">
+              </Link>
+              <Link to="/dodaj-post">
                 <h3>Dodaj post</h3>
-              </a>
+              </Link>
             </div>
           </div>
         </nav>

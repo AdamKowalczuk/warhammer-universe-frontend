@@ -13,14 +13,10 @@ function App() {
   return (
     <Router>
       <Nav />
-      <History />
       <Switch>
-        <Route exact path="/historia">
-          <History />
-        </Route>
         <Route path="/" exact component={ExercisesList} />
+        <Route path="/historia" component={History} />
         <Route path="/posty/:id" component={Details} />
-        {/* <Route path="/historia" exact component={History} /> */}
         <Route path="/frakcje" exact component={Fractions} />
         <Route path="/dodaj-post" component={AddPost} />
       </Switch>
