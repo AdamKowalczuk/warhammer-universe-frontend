@@ -28,9 +28,9 @@ export default class addPost extends Component {
               (post) => (post.title, post.description, post.author)
             ),
 
-            // title: response.data[0].title,
-            // description: response.data[1].description,
-            // author: response.data[2].author,
+            title: response.data[0].title,
+            description: response.data[1].description,
+            author: response.data[2].author,
           });
         }
       })

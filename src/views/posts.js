@@ -6,12 +6,12 @@ import axios from "axios";
 const Post = (props) => (
   <Link to={"/posty/" + props.post._id}>
     <div className="single-post">
-      <a className="single">
+      <div className="single">
         <h3 className="title">{props.post.title}</h3>
         {/* <button>
         <Link to={"/posty/" + props.post._id}>Zobacz</Link>
       </button> */}
-      </a>
+      </div>
     </div>
   </Link>
 );
