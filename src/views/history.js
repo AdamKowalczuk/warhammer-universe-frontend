@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import "../App.css";
-import warhammer1 from "../images/warhammer1.jpg";
-import warhammer2 from "../images/warhammer2.jpg";
-import dwarf from "../images/dwarf.jpg";
+// import warhammer1 from "../images/warhammer1.jpg";
+// import warhammer2 from "../images/warhammer2.jpg";
+// import dwarf from "../images/dwarf.jpg";
 export default class history extends Component {
   render() {
     return (
       <>
-        <div className="context-container">
+        <h1>History</h1>
+        {/* <div className="context-container">
           <div className="context-box">
             <h2>Historia</h2>
             <img src={warhammer1} alt="warhammer" className="img-right" />
@@ -58,7 +59,7 @@ export default class history extends Component {
               kala chwałę imperium Sigmara i rozkłada je od środka.
             </p>
           </div>
-        </div>
+        </div> */}
       </>
     );
   }
