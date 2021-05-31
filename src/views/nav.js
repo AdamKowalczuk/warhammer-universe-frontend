@@ -8,7 +8,7 @@ export default class nav extends Component {
         <nav>
           <div className="header">
             <div className="site-title">
-              <Link to="/historia">
+              <Link to="/">
                 <h1>Warhammer Universe</h1>
               </Link>
             </div>
