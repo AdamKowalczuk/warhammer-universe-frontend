@@ -15,7 +15,10 @@ export default class Details extends Component {
 
   componentDidMount() {
     axios
-      .get("http://localhost:3001/posts/" + this.props.match.params.id)
+      .get(
+        "https://warhammer-universe-server.herokuapp.com/posts" +
+          this.props.match.params.id
+      )
       .then((response) => {
         this.setState({
           title: response.data.title,

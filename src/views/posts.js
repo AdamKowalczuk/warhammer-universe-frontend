@@ -24,7 +24,7 @@ export default class posts extends Component {
   }
   componentDidMount() {
     axios
-      .get("http://localhost:3001/posts/")
+      .get("https://warhammer-universe-server.herokuapp.com/posts")
       .then((response) => {
         this.setState({ posts: response.data });
       })
