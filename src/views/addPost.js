@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../App.css";
 import axios from "axios";
+import { Translation } from "react-i18next";
 export default class addPost extends Component {
   constructor(props) {
     super(props);
@@ -80,7 +81,7 @@ export default class addPost extends Component {
             <div className="create-blog content">
               <form onSubmit={this.onSubmit}>
                 <label htmlFor="title">
-                  <h3>Tytuł</h3>{" "}
+                  <Translation>{(t) => <h3>{t("Tytuł")}</h3>}</Translation>
                 </label>
                 <input
                   type="text"
@@ -91,7 +92,7 @@ export default class addPost extends Component {
                   onChange={this.onChangeTitle}
                 />
                 <label htmlFor="author">
-                  <h3>Autor</h3>
+                  <Translation>{(t) => <h3>{t("Autor")}</h3>}</Translation>
                 </label>
                 <input
                   type="text"
@@ -102,7 +103,7 @@ export default class addPost extends Component {
                   onChange={this.onChangeAuthor}
                 />
                 <label htmlFor="body">
-                  <h3>Opis</h3>
+                  <Translation>{(t) => <h3>{t("Opis")}</h3>}</Translation>
                 </label>
                 <textarea
                   id="body"
@@ -112,7 +113,9 @@ export default class addPost extends Component {
                   onChange={this.onChangeDescription}
                 ></textarea>
                 <button type="submit">
-                  <p style={{ color: "white" }}>Dodaj</p>
+                  <Translation>
+                    {(t) => <p style={{ color: "white" }}>{t("Dodaj")}</p>}
+                  </Translation>
                 </button>
               </form>
             </div>

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "../App.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { Translation } from "react-i18next";
 
 const Post = (props) => (
   <Link to={"/posty/" + props.post._id}>
@@ -46,7 +47,7 @@ export default class posts extends Component {
       <>
         <div className="context-container">
           <div className="context-box">
-            <h2>Posty</h2>
+            <Translation>{(t) => <h2>{t("Posty")}</h2>}</Translation>
             {this.postList()}
           </div>
         </div>
