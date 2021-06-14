@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import { Translation } from "react-i18next";
 
 export default class Details extends Component {
   constructor(props) {
@@ -40,7 +41,17 @@ export default class Details extends Component {
           <h3 style={{ fontStyle: "italic", marginBottom: "0px" }}>
             {this.state.author}
           </h3>
-          <p style={{ padding: "1vw 5vw" }}>{this.state.description}</p>
+          <p style={{ padding: "1vw 5vw" }}>
+            {/* {this.state.description} */}
+            {/* <Translation>
+              {(t) => {
+                t(this.state.description);
+              }}
+            </Translation> */}
+            <Translation>
+              {(t) => <p>{t(this.state.description)}</p>}
+            </Translation>
+          </p>
         </div>
       </div>
     );

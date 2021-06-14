@@ -18,6 +18,19 @@ export default class nav extends Component {
       });
     }
   }
+  openNav() {
+    let menuDisplay = document.getElementsByClassName("dropdown-menu")[0].id;
+
+    if (menuDisplay === "open") {
+      document.getElementsByClassName("dropdown-menu")[0].id = "close";
+
+      document.getElementsByClassName("header-right")[0].style.display = "none";
+    } else {
+      document.getElementsByClassName("dropdown-menu")[0].id = "open";
+      document.getElementsByClassName("header-right")[0].style.display =
+        "block";
+    }
+  }
   render() {
     return (
       <>
@@ -29,6 +42,17 @@ export default class nav extends Component {
                   {(t) => <h1>{t("Warhammer Universe")}</h1>}
                 </Translation>
               </Link>
+            </div>
+            <div
+              className="dropdown-menu"
+              id="close"
+              onClick={() => {
+                this.openNav();
+              }}
+            >
+              <div className="bar1"></div>
+              <div className="bar2"></div>
+              <div className="bar3"></div>
             </div>
             <div className="header-right">
               <Link to="/historia">
